@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <a style="margin: 20px;padding:20px" href="index.html">GoBack</a>
+        <div id="detail-section-by-id">
+
+           
+        </div>
+        <h2 style="margin-left: 100px;">Related News</h2>
+        <div id="product-list-containers">
+            
+
+        </div>
+    </div>
+    <script>
+
+        
+            const data =  {
+                "author": "Ankush Verma",
+                "readmore":"sixth.html",
+                "content": "Former Pakistan Prime Minister Imran Khan's party has said that the police have resumed heavy shelling at his Lahore residence amid attempts to arrest him. His party posted a video on Twitter and wrote, \"Residence of PTI Chairman under attack.\" Khan posted a video and said that the \"real intent\" of the police is \"to abduct and assassinate\" him.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "f3003512cf384ed39eda4232e05e4ca6",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678858323487_721.jpg?",
+                "readMoreUrl": null,
+                "time": "11:31 am",
+                "title": "Video from inside ex-Pak PM Imran Khan's residence shows heavy shelling by police",
+                "url": "https://www.inshorts.com/en/news/video-from-inside-expak-pm-imran-khans-residence-shows-heavy-shelling-by-police-1678860100355"
+            }
+            const productDetails =
+            ` <div class="detail-section">
+                <img style="border-radius: 20px; margin: 10px; height:400px;width:500px" src="${data.imageUrl}" alt="product_img">
+                <div class="detail-container">
+                    <h3>${data.title}</h3>
+                    </br>
+                    <h5>Category:${data.content}</h5>
+                </div>
+            </div>`
+
+            const detailSection = document.getElementById("detail-section-by-id")
+            detailSection.innerHTML = productDetails
+          
+            const newData = [
+            {
+                "author": "Amit Kunal",
+                "content": "Afghanistan won their maiden-SAFF Football Championship after defeating India 2-0 in the finals at Kathmandu and spoilt India's bid to win a hat-trick of SAFF-trophies. Mustafa Azadzoy(8th-minute) and Sanjar Ahmadi(63rd-minute) scored goals for Afghans, who lost championship to India 0-4 in New Delhi two-years back. From Indian-side, Robin Singh and Jeje Lalpeklhua were praiseworthy but couldn't save India from defeat.",
+                "date": "12 Sep 2013,Thursday",
+                "id": "7f691962a1334740aa13c2baf2550e99",
+                "imageUrl": "https://assets.inshorts.com/app_assets/images/2013/9sep/12/53731000-0008-0009-1327-000012345678-14708487918270.jpg?resize=*:400px",
+                "readMoreUrl": "http://timesofindia.indiatimes.com/sports/football/top-stories/Afghanistan-dash-Indias-hat-trick-hopes-win-SAFF-title/articleshow/22492018.cms?utm_source=facebook&amp;utm_medium=referral&amp;utm_campaign=TOISports ",
+                "time": "01:42 pm",
+                "title": "Afghanistan wins SAFF title, spoils India's hat-trick hopes",
+                "url": "https://www.inshorts.com/en/news/735bb8c6-14c4-4baf-9cd1-ace48ea63283"
+            },
+            {
+                "author": "Sumedha Sehra",
+                "content": "India may move up after Nigerian weightlifter Chika Amalaha’s A dope sample returned positive. Santoshi Matsa’s bronze and Swati Singh's 4th position may be upgraded in women’s 53kg. “We shouldn’t presume anything just yet, once she has provided a B sample that is when we can decide on the re—awarding of medals and appropriate actions\" said CWG-Federation chief-executive Mike Hooper.",
+                "date": "29 Jul 2014,Tuesday",
+                "id": "f2ccbc16dbd9411aafb344855567482a",
+                "imageUrl": "https://assets.inshorts.com/app_assets/images/2014/7jul/29/20035000-0013-0007-1695-000012345678-14708645681430.jpg?resize=*:400px",
+                "readMoreUrl": "http://www.thehindu.com/sport/other-sports/cwg-2014-nigerian-weightlifting-winner-chika-amalaha-fails-doping-test/article6260810.ece ",
+                "time": "06:47 pm",
+                "title": "Nigerian weightlifter in dope net, India may gain",
+                "url": "https://www.inshorts.com/en/news/nigerian-weightlifter-in-dope-net-india-may-gain"
+            },
+            {
+                "author": "Sumedha Sehra",
+                "content": "The Indian men's hockey team faced a 4-0 defeat in the finals of the CWG, against Australia. The intimidating Australian team scored two goals each in the first and the second half, giving no chance to India. This is the fifth consecutive gold-win for the team in CWG. Interestingly, India had lost 8-0 to Australia in the finals of CWG-2010 ",
+                "date": "03 Aug 2014,Sunday",
+                "id": "ef5c02db686e4b1db7211f4d2c92ca66",
+                "imageUrl": "https://assets.inshorts.com/app_assets/images/2014/8aug/3/54615000-0014-0008-2727-000012345678-14708644794450.jpg?resize=*:400px",
+                "readMoreUrl": "http://www.thehindu.com/sport/hockey/cwg-india-mens-hockey-team-settle-for-silver-lose-to-australia/article6277359.ece ",
+                "time": "07:30 pm",
+                "title": "Indian men's hockey team settles for silver",
+                "url": "https://www.inshorts.com/en/news/indian-men's-hockey-team-settles-for-silver"
+            },
+            {
+                "author": "Sumedha Sehra",
+                "content": "The All India Football Federation (AIFF) has confirmed that India would play 2 international football friendly matches against Palestine on October 6 and 9 this year. Palestine was recently conferred AFC Challenge Cup champions, and stands on the 85th position according to the FIFA rankings of July 2014. India, that lies at 151st position, lost 4-2 to Palestine last time.",
+                "date": "05 Aug 2014,Tuesday",
+                "id": "8c720ee9671a4e4a8ad91c59f841c988",
+                "imageUrl": "https://assets.inshorts.com/app_assets/images/2014/8aug/5/26438000-0013-0008-3151-000012345678-14708644393600.jpg?resize=*:400px",
+                "readMoreUrl": "http://www.business-standard.com/article/news-ians/india-to-play-two-international-friendlies-in-october-114080501041_1.html ",
+                "time": "07:13 pm",
+                "title": "India to play 2 football friendlies against Palestine",
+                "url": "https://www.inshorts.com/en/news/india-to-play-2-football-friendlies-against-palestine"
+            }
+        ]
+        const productContainer = document.getElementById(
+            "product-list-containers"
+        );
+        newData.forEach((item) => {
+            const singleProduct = `
+
+
+            <div class="product-cards">
+                
+                <img class="product-images" src=${item.imageUrl}/>
+                <h3 style="padding: 5px">Title:${item.title}</h3>
+                <a href="${item.readMoreUrl}">Read More</a>
+
+                
+                    
+            </div>
+             `;
+
+            productContainer.innerHTML += singleProduct
+        });
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

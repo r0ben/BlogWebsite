@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Updates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 class="blogTitle">News Update</h3>
+    <div class="tab">
+        <button class="tablinks">All</button>
+        <button class="tablinks">Science</button>
+        <button class="tablinks">Business</button>
+        <button class="tablinks">Sports</button>
+        <button class="tablinks">World</button>
+        <button class="tablinks">Politics</button>
+        <button class="tablinks">Entertainment</button>
+        <button class="tablinks">Start Up</button>
+        <button class="tablinks">Technology</button>
+       
+    </div>
+    <div id="product-list-container">
+
+
+    </div>
+    <script>
+        const data = [
+            {
+                "author": "Sakshita Khosla",
+                "readmore":"firstNews.html",
+                "content": "Former Bihar CMs Lalu Yadav and Rabri Devi were on Wednesday granted bail by a Delhi court in connection with the land-for-jobs scam. Lalu and Rabri's daughter Misa Bharti was also granted bail in the case. Lalu Yadav, who recently underwent kidney transplant, was seen entering the Rouse Avenue Court in a wheelchair on Wednesday.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "550c5d15bd5f4468a54474ea1a1ea6c4",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678860982469_132.jpg?",
+                "readMoreUrl": "https://www.timesnownews.com/india/breaking-news-lalu-yadav-rabri-devi-misa-get-bail-in-land-for-job-scam-case-article-98650249/amp?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:48 am",
+                "title": "Lalu Yadav, Rabri Devi & their daughter Misa get bail in land for jobs scam case",
+                "url": "https://www.inshorts.com/en/news/lalu-yadav-rabri-devi-their-daughter-misa-get-bail-in-land-for-jobs-scam-case-1678861127488"
+            },
+            {
+                "author": "Ankush Verma",
+                "readmore":"secondNews.html",
+                "content": "Actor Sameer Khakhar, best known for his role in TV show 'Nukkad', has passed away at the age of 71. Khakhar, who was suffering from respiratory and other medical problems, breathed his last at the MM Hospital, Borivali. \"He was admitted to the ICU. He then had multiple organ failure and today at 4.30 am he collapsed,\" his brother said.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "89ed624e43c6485aaebb6950414e5765",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678856029173_0.jpg?",
+                "readMoreUrl": null,
+                "time": "10:43 am",
+                "title": "Actor Sameer Khakhar, best known for his role in 'Nukkad', dies aged 71",
+                "url": "https://www.inshorts.com/en/news/actor-sameer-khakhar-best-known-for-his-role-in-nukkad-dies-aged-71-1678857238832"
+            },
+            {
+                "author": "Sakshita Khosla",
+                "readmore":"thirdNews.html",
+                "content": "Gangster Lawrence Bishnoi, who was interviewed by a news channel in jail, claimed that Salman Khan offered money to the community leaders after allegedly poaching blackbucks in Rajasthan. \"I refused to take the money,\" said Bishnoi. Lawrence said he wanted Salman to apologise to the Bishnoi community for the incident. Notably, blackbucks are sacred to the Bishnois.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "f54e43ac081e49fc8df45cbbc637cf77",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678856783732_176.jpg?",
+                "readMoreUrl": "https://www.youtube.com/watch?utm_campaign=fullarticle&v=YjALJJSPEbM&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:00 am",
+                "title": "Salman offered money after blackbuck incident, I refused to take it: Lawrence Bishnoi",
+                "url": "https://www.inshorts.com/en/news/salman-offered-money-after-blackbuck-incident-i-refused-to-take-it-lawrence-bishnoi-1678858230781"
+            },
+            {
+                "author": "Anmol Sharma",
+                "readmore":"fourth.html",
+                "content": "FIFA has announced a new format for the 2026 FIFA World Cup. As many as 48 teams will be participating in the tournament. There will be 12 groups having four teams each. The top two teams from each group and the eight best third-place teams will progress to the round of 32. A total of 104 matches will be played.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "2e6134372dd941b88198f97a673f99f0",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678860246337_485.jpg?",
+                "readMoreUrl": "https://www.fifa.com/fifaplus/en/articles/date-set-for-2026-world-cup-final-canada-mexico-usa?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:49 am",
+                "title": "What is the new format of FIFA World Cup?",
+                "url": "https://www.inshorts.com/en/news/what-is-the-new-format-of-fifa-world-cup-1678861199016"
+            },
+            {
+                "author": "Ankush Verma",
+                "readmore":"fifth.html",
+                "content": "A 28-year-old software engineer from Madhya Pradesh and his two wives have reached an out-of-court agreement that he would be spending three days a week each with the two of them. The agreement was reached with the help of a counsellor appointed by Gwalior Family Court. His first wife filed the case after she found out about his second marriage.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "722bcc1c90ab42dc889c294fa7072e2f",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678860752967_129.jpg?",
+                "readMoreUrl": "https://www.freepressjournal.in/amp/bhopal/mp-gharwali-or-baharwali-gwalior-court-orders-man-to-spend-3-days-a-week-with-each-wife-gives-him-sunday-respite?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:51 am",
+                "title": "Software engineer reaches agreement to spend 3 days a week each with 2 wives in MP",
+                "url": "https://www.inshorts.com/en/news/software-engineer-reaches-agreement-to-spend-3-days-a-week-each-with-2-wives-in-mp-1678861304774"
+            },
+            {
+                "author": "Ankush Verma",
+                "readmore":"sixth.html",
+                "content": "Former Pakistan Prime Minister Imran Khan's party has said that the police have resumed heavy shelling at his Lahore residence amid attempts to arrest him. His party posted a video on Twitter and wrote, \"Residence of PTI Chairman under attack.\" Khan posted a video and said that the \"real intent\" of the police is \"to abduct and assassinate\" him.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "f3003512cf384ed39eda4232e05e4ca6",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678858323487_721.jpg?",
+                "readMoreUrl": null,
+                "time": "11:31 am",
+                "title": "Video from inside ex-Pak PM Imran Khan's residence shows heavy shelling by police",
+                "url": "https://www.inshorts.com/en/news/video-from-inside-expak-pm-imran-khans-residence-shows-heavy-shelling-by-police-1678860100355"
+            },
+            {
+                "author": "Athira Sasidharan",
+                "readmore":"seventhNews.html",
+                "content": "The Central Bank of Nigeria said it'll allow old bank notes to continue as legal tender until December 31 to comply with a court order earlier this month. Both old and redesigned notes were still not available for thousands queued at banks in Nigeria's capital Abuja on Tuesday. Cash shortages have plagued Nigeria since the beginning of the year.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "e9fa48a48dd5496b9bd010328b59aef1",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678858396949_622.jpg?",
+                "readMoreUrl": "https://apnews.com/article/nigeria-cash-crisis-currency-swap-36674c8e949af512813b888e78611063?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:53 am",
+                "title": "Old notes can still be used: Nigeria central bank amid cash crisis",
+                "url": "https://www.inshorts.com/en/news/old-notes-can-still-be-used-nigeria-central-bank-amid-cash-crisis-1678861383709"
+            },
+            {
+                "author": "Amartya Sharma",
+                "readmore":"eightNews.html",
+                "content": "'RRR' actor Jr NTR said he loves the way Brad Pitt acts. \"I love to see how dedicated he is to his movies...I love his walking style too...He's great...I love almost everything about Brad,\" he stated. When asked about a film in which he'd like to be seen with Brad, Jr NTR said he'd like to play Hector in 'Troy'.",
+                "date": "15 Mar 2023,Wednesday",
+                "id": "1aed7447e81841ff9029e60519c8b9cc",
+                "imageUrl": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2023/03_mar/15_wed/img_1678856017736_553.jpg?",
+                "readMoreUrl": "https://www.freepressjournal.in/amp/entertainment/rrr-star-jr-ntr-wishes-to-work-with-brad-pitt-says-i-love-the-way-he-acts?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+                "time": "11:13 am",
+                "title": "Brad Pitt is great, I love almost everything about him: Jr NTR",
+                "url": "https://www.inshorts.com/en/news/brad-pitt-is-great-i-love-almost-everything-about-him-jr-ntr-1678859028908"
+            },
+        ]
+
+
+        const productContainer = document.getElementById(
+            "product-list-container"
+        );
+
+        data.forEach((item) => {
+            const singleProduct = `
+
+
+            <div class="product-card">
+                <img class="product-image" src=${item.imageUrl}/>
+                <h3 style="padding: 5px">Title:${item.title}</h3>
+                <h3 style="padding: 5px">Date:${item.date}</h3>
+                <h3 style="padding: 5px">Aurther:${item.author}</p>
+                    <a href="${item.readmore}">Read More</a> 
+            </div>
+             `;
+
+            productContainer.innerHTML += singleProduct
+        });
+        // const viewProductDetails = () => {
+        //     window.location.href = `productdetails.html`;
+        //     console.log("Clicked")
+        // };
+
+    </script>
+</body>
+
+</html>
